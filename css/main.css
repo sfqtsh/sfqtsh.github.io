@@ -192,6 +192,9 @@ a         { color: #91736b; text-decoration: none; }
 .main .article a:hover {
     border-bottom: 3px double rgba(0, 0, 0, 0.1);
 }
+
+
+
 .main .article blockquote {
     position: relative;
     padding: 10px 10px;
@@ -262,13 +265,39 @@ a         { color: #91736b; text-decoration: none; }
     text-indent: 6px;
 }
 
-.main .article pre {
-    margin-bottom: 1em;
-    padding: 10px 10px;
-    color: #4d4d4d;
-    background: rgba(0, 0, 0, 0.1);
-    overflow: auto;
-}
+/*.main .article pre {*/
+/*    margin-bottom: 1em;*/
+/*    padding: 10px 10px;*/
+/*    color: #4d4d4d;*/
+/*    background: rgba(0, 0, 0, 0.1);*/
+/*    overflow: auto;*/
+/*}*/
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+/*  overflow-x: scroll; }*/
+	}
+
+/*code在pre之内时：*/
+pre >  code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+	background-color: rgba(0, 0, 0, 0.0);}
+
 .main .highlight {
     position: relative;
 }
