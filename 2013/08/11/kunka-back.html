@@ -211,7 +211,7 @@ for ( int i=0; i&lt;5; i++)
     </nav>
     <div class="comment">
         
-            
+        <div id="disqus_thread"></div>
         
     </div>
 </div>
@@ -247,7 +247,7 @@ for ( int i=0; i&lt;5; i++)
                             
                                 
                                     
-                                    <li><a href="http://www.zhanxin.info" title="掌心" target="_blank">掌心</a></li>
+                                    <li><a href="http://www.zhanxin.info" title="zhanxin" target="_blank">zhanxin</a></li>
                                     
                                     <li><a href="http://jekyllrb.com" title="Jekyll" target="_blank">Jekyll</a></li>
                                     
@@ -271,7 +271,16 @@ for ( int i=0; i&lt;5; i++)
         <script type="text/javascript" src="/css/jquery.min.js"></script>
         
             
-                
+            <script type="text/javascript">
+                //disqus
+                var disqus_shortname = 'softaoss';
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] ||
+                        document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
             
         
     </body>
