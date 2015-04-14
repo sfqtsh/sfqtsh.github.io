@@ -19,7 +19,8 @@ body {
     background: #92b3a2 url(../images/bg.jpg) repeat 0 0;
     font-size: 14px;
     line-height: 1.5;
-    font-family: Georgia, Hiragino Sans GB,\5b8b\4f53;
+/*	font-family: SimSun;*/
+    font-family: Simsun, Georgia, Hiragino Sans GB,\5b8b\4f53;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
 }
 
@@ -30,6 +31,7 @@ h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
 a         { color: #91736b; text-decoration: none; }
+/*a:hover { text-decoration: underline; }*/
 
 ::-moz-selection {background: rgba(252, 252, 82,0.2)}
 ::selection {background: rgba(252, 252, 82,0.2)}
@@ -278,7 +280,7 @@ a         { color: #91736b; text-decoration: none; }
  */
 pre,
 code {
-  font-size: 15px;
+  font-size: 14px;
   border: 1px solid #e4e4e4;
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.1); }
@@ -293,10 +295,12 @@ pre {
 
 /*code在pre之内时：*/
 pre >  code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-	background-color: rgba(0, 0, 0, 0.0);}
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+  }
 
 .main .highlight {
     position: relative;
@@ -675,10 +679,11 @@ pre >  code {
 .aside-contact .title {
     line-height: 24px;
     color: #232323;
-    font-size: 14px;
+    font-size: 15px;
+	font-style: italic;
     line-height: 24px;
-    font-family: 'Spirax', cursive;
-    text-transform: uppercase;
+    font-family: Calibri , Georgia, cursive;
+/*    text-transform: uppercase;*/
 }
 .aside-contact .det {
     padding: 10px 0;
@@ -691,9 +696,9 @@ pre >  code {
     width: 48px;
     height: 48px;
     float: left;
-    padding: 2px 2px;
+/*    padding: 1px 1px;*/
     background: #fff;
-    border: 1px solid #9d6156;
+    border: 1px dotted #92746F;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .aside-contact .det-image img {
@@ -724,13 +729,14 @@ pre >  code {
 .aside-item .title {
     line-height: 24px;
     color: #232323;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
     padding-bottom: 3px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
-    font-family: 'Spirax', cursive;
-    text-transform: uppercase;
+    font-family: Calibri, Georgia, cursive;
+	font-style: italic;
+/*    text-transform: uppercase;*/
 }
 .aside-item .list {
     padding: 10px 0;
